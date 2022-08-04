@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1659608854 source:d:\c++\singleton-observer\main.cpp
+	<iostream>
+	<string>
+	"Subcriber.h"
+	"WCMediaProvider.h"
+
+1659608727 d:\c++\singleton-observer\subcriber.h
+	<iostream>
+	<string>
+	"iSubcriber.h"
+	"iWCMediaProvider.h"
+
+1659605670 d:\c++\singleton-observer\isubcriber.h
+	<iostream>
+	<string>
+
+1659608894 d:\c++\singleton-observer\wcmediaprovider.h
+	"iWCMediaProvider.h"
+	<vector>
+	<algorithm>
+
+1659607788 d:\c++\singleton-observer\iwcmediaprovider.h
+	<iostream>
+	"iSubcriber.h"
+
