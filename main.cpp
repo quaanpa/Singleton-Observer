@@ -11,8 +11,10 @@ int main()
     WCMediaProvider *WC ;
     WC = WCMediaProvider :: getInstance("World Cup Quatar 2022 ");
     cout << "Copyright by " << WC->getName() <<std::endl;
+    cout << &WC << endl;
     WC = WCMediaProvider :: getInstance("Quatar 2022 ");
     cout << "Copyright by " << WC->getName() <<std::endl;
+    cout << &WC <<endl ;
 
     Subcriber vtv;
     Subcriber vtc;
@@ -23,6 +25,6 @@ int main()
     WC->broadCast("Portugal 1-0 Spain");
 
     kplus.Unregister(WC);
-    WC->broadCast("Portugal 1-0 Spain");
+    WC->broadCast("Argentina 2-0 Japan");
     return 0;
 }

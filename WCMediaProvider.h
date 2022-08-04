@@ -51,7 +51,7 @@ void WCMediaProvider :: detach(iSubcriber *tv)
 void WCMediaProvider :: Notify()
 {
     numberOfSubcribers();
-    for(iSubcriber * tv : station)
+    for(iSubcriber *tv : station)
     {
         tv->update(WCmessage);
     }

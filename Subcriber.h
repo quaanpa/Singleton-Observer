@@ -9,18 +9,19 @@ using namespace std;
 class Subcriber : public iSubcriber
 {
 private:
-    std::string wcMessage;
+    std::string Message;
 public:
     Subcriber();
-    void update(std::string &wcContent) override;
+    void update(std::string &WCmessage) override;
     void Register(iWCMediaProvider *Station);
     void Unregister(iWCMediaProvider *Station);
 };
 
 Subcriber::Subcriber(){}
-void Subcriber :: update(std::string &wcContent)
+void Subcriber :: update(std::string &WCmessage)
 {
-    wcMessage = wcContent;
+    Message = WCmessage;
+    cout << this->Message << endl;
 }
 
 void Subcriber :: Register(iWCMediaProvider * Station)
