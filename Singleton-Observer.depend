@@ -24,3 +24,28 @@
 	<iostream>
 	"iSubcriber.h"
 
+1659883693 source:c:\temp\project\singleton-observer\main.cpp
+	<iostream>
+	<string>
+	"Subcriber.h"
+	"WCMediaProvider.h"
+
+1659883743 c:\temp\project\singleton-observer\subcriber.h
+	<iostream>
+	<string>
+	"iSubcriber.h"
+	"iWCMediaProvider.h"
+
+1659883294 c:\temp\project\singleton-observer\isubcriber.h
+	<iostream>
+	<string>
+
+1659883294 c:\temp\project\singleton-observer\iwcmediaprovider.h
+	<iostream>
+	"iSubcriber.h"
+
+1659883294 c:\temp\project\singleton-observer\wcmediaprovider.h
+	"iWCMediaProvider.h"
+	<vector>
+	<algorithm>
+

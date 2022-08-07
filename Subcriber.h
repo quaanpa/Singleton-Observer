@@ -10,18 +10,23 @@ class Subcriber : public iSubcriber
 {
 private:
     std::string Message;
+    std::string sName;
 public:
-    Subcriber();
+    Subcriber(std::string name);
     void update(std::string &WCmessage) override;
     void Register(iWCMediaProvider *Station);
     void Unregister(iWCMediaProvider *Station);
+    std::string getName();
 };
 
-Subcriber::Subcriber(){}
+Subcriber::Subcriber(std::string name)
+{
+    sName = name;
+}
 void Subcriber :: update(std::string &WCmessage)
 {
     Message = WCmessage;
-    cout << this->Message << endl;
+    cout <<getName()<< ": " << this->Message << endl;
 }
 
 void Subcriber :: Register(iWCMediaProvider * Station)
@@ -32,6 +37,11 @@ void Subcriber :: Register(iWCMediaProvider * Station)
 void Subcriber :: Unregister(iWCMediaProvider * Station)
 {
     Station->detach(this);
+}
+
+std::string Subcriber ::getName()
+{
+    return sName;
 }
 
 #endif // SUBCRIBER_H_INCLUDED

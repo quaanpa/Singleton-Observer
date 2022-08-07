@@ -32,6 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Subcriber.h" />
+		<Unit filename="WCMediaProvider.h" />
+		<Unit filename="iSubcriber.h" />
+		<Unit filename="iWCMediaProvider.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

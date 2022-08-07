@@ -16,14 +16,18 @@ int main()
     cout << "Copyright by " << WC->getName() <<std::endl;
     cout << &WC <<endl ;
 
-    Subcriber vtv;
-    Subcriber vtc;
-    Subcriber kplus;
+    Subcriber vtv("vtc3");
+    Subcriber vtc("vtc1");
+    Subcriber kplus("kplus1");
+
     vtv.Register(WC);
     vtc.Register(WC);
     kplus.Register(WC);
+
+    cout << "Test register: \n";
     WC->broadCast("Portugal 1-0 Spain");
 
+    cout << "Test unregister: \n";
     kplus.Unregister(WC);
     WC->broadCast("Argentina 2-0 Japan");
     return 0;
